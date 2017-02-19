@@ -30,8 +30,14 @@
 
 4. **bhid install**
 
-5. **systemctl daemon-reload**
+5. systemd-way:
+
+  **systemctl daemon-reload**
 
   **systemctl enable bhid**
 
   **systemctl start bhid**
+
+  or just:
+  
+  **bhid run**
