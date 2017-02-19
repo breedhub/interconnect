@@ -22,26 +22,26 @@
 
 ### Daemon
 
-1. Install Node 6+
+  **Install Node 6+**
 
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-2. **apt-get install build-essential ca-certificates**
+apt-get install build-essential ca-certificates
 
-3. **npm install -g bhid --unsafe-perm**
+npm install -g bhid --unsafe-perm
 
-4. **bhid install**
+bhid install
 
-5. systemd-way:
+  **systemd-way:**
 
-  **systemctl daemon-reload**
+systemctl daemon-reload
 
-  **systemctl enable bhid**
+systemctl enable bhid
 
-  **systemctl start bhid**
+systemctl start bhid
 
-  or just:
+  **or just:**
   
-  **bhid run**
+bhid run
