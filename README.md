@@ -2,44 +2,36 @@
 
 ### Tracker
 
-1. Install Node 6
+1. Install Node 6+, Postgres 9.4+, Redis 3+
 
-2. npm install -g bhit
+2. apt-get install build-essential
 
-3. bhit install my.host.name
+3. npm install -g bhit --unsafe-perm
+
+4. bhit install my.host.name
 
   Certificate will be generated as certs/my.host.name.cert
 
-4. systemctl daemon-reload
+5. systemctl daemon-reload
 
   systemctl enable bhit
 
-5. Edit /etc/bhit/bhit.conf if needed
+6. Edit /etc/bhit/bhit.conf
 
-6. systemctl start bhit
-
-7. See the logs: journalctl -fu bhit
+7. systemctl start bhit
 
 ### Daemon
 
-1. Install Node 6
+1. Install Node 6+
 
-2. npm install -g bhid
+2. apt-get install build-essential
 
-3. bhid install this-daemon-name
+3. npm install -g bhid --unsafe-perm
 
-  Peer public key will be id/this-daemon-name.public.rsa
+4. bhid install
 
-4. systemctl daemon-reload
+5. systemctl daemon-reload
 
   systemctl enable bhid
 
-5. Edit /etc/bhid/bhid.conf
-
-  Upload tracker .cert file to certs/ directory (only needed if using default self-signed certificate and do not copy .key file)
-  
-  Upload public key of your peer to peers/ directory (only .public.rsa file, .private.rsa should not be copied anywhere)
-
-6. systemctl start bhid
-
-7. See the logs: journalctl -fu bhid
+ systemctl start bhid
