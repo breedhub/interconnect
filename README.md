@@ -10,8 +10,6 @@
 
 4. bhit install my.host.name
 
-  Certificate will be generated as certs/my.host.name.cert
-
 5. systemctl daemon-reload
 
   systemctl enable bhit
