@@ -193,7 +193,7 @@ Note: Daemon *could* be configured remotely, but the new connections
 will not be activated until you login to that daemon and run **load**
 command there.
 
-New configuratio is also applied when running **auth** command on the
+New configuration is also applied when running **auth** command on the
 daemon.
 
 ### rattach - Make any your daemon a server or a client of your connection
