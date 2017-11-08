@@ -113,7 +113,7 @@ is fixed (clients list is saved and unknown clients will not be accepted
 by server daemon until next **load** command run on the server, daemons
 will also not be allowed to change their RSA keys).
 
-&lt;connect-addr&gt; and &lt;listen-addr7gt; are written in the form of
+&lt;connect-addr&gt; and &lt;listen-addr&gt; are written in the form of
 host:port or just /path/to/unix/socket. Listen host and port can
 contain * symbol for any host or random port respectively. Default
 listen address is *:*.
