@@ -103,12 +103,15 @@ Prints the list of all your daemons or just daemons attached to
 
 ```bhidctl create <path> <connect-addr> [<listen-addr>] [-s|-c] [-e] [-f] [-t <tracker>]```
 
-Create a new connection. If -s is set then this daemon is configured as
-server of this connection, or as client when -c is set. If -e is set
-then connection is encrypted. If -f is set then connection is fixed
-(clients list is saved and unknown clients will not be accepted by a
-daemon until next **load** command run on the daemon, daemons will also
-not be allowed to change RSA keys).
+Create a new connection. If -s is set then this (master) daemon is
+configured as server of this connection, or as client when -c is set.
+Don't use neither -s nor -c if this master will not be part of the
+connection.
+
+If -e is set then connection is encrypted. If -f is set then connection
+is fixed (clients list is saved and unknown clients will not be accepted
+by server daemon until next **load** command run on the server, daemons
+will also not be allowed to change their RSA keys).
 
 &lt;connect-addr&gt; and &lt;listen-addr7gt; are written in the form of
 host:port or just /path/to/unix/socket. Listen host and port can
