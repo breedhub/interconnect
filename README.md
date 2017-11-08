@@ -115,8 +115,8 @@ will also not be allowed to change their RSA keys).
 
 &lt;connect-addr&gt; and &lt;listen-addr&gt; are written in the form of
 host:port or just /path/to/unix/socket. Listen host and port can
-contain * symbol for any host or random port respectively. Default
-listen address is *:*.
+contain &lowast; symbol for any host or random port respectively.
+Default listen address is &lowast;:&lowast;.
 
 Note: listen address is just a recommendation for the client of the
 connection, they will still be able to set any listen address they want
@@ -167,9 +167,9 @@ Attach this daemon to the given path imported previously. Address is in
 the form of host:port or /path/to/unix/socket. If host or port value
 is omitted then default will be used (set with **create** command).
 
-Client connection listen address override host or port can contain *
+Client connection listen address override host or port can contain &lowast;
 symbol, which means all interfaces and random port respectively. Server
-connection address override cannot contain *.
+connection address override cannot contain &lowast;.
 
 ### detach - Detach this daemon from given connection
 
