@@ -55,6 +55,9 @@ There will be confirmation token in the email. Choose one host that
 will be your master daemon and run **confirm** command there. Master
 token will be saved on this host.
 
+If you ever want to move the master to other daemon just redeem its token
+using **redeem** command (see below).
+
 ### register - Register new daemon
 
 ```bhidctl register [<daemon-name>] [-r] [-a] [-q] [-t <tracker>]```
