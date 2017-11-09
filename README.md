@@ -1,4 +1,4 @@
-# Work in progress
+# Breedhub Interconnect
 
 Ever wondered how your bittorrent software is able to establish
 connection to your peer when both of you are behind NAT? This is
@@ -19,6 +19,18 @@ and will work through NAT if their firewall allows that (default Linux
 does for example).
 
 # Installation
+
+* Tracker
+
+  https://github.com/breedhub/bhit-node
+  
+  Or you can skip it entirely and just use default public Breedhub tracker
+  
+* Daemon
+
+  https://github.com/breedhub/bhid-node
+  
+  This is what you need
 
 # Usage
 
