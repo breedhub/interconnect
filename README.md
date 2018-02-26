@@ -1,6 +1,6 @@
 # Breedhub Interconnect
 
-Ever wondered how your bittorrent software is able to establish
+Ever wondered how your BitTorrent software is able to establish a
 connection to your peer when both of you are behind NAT? This is
 [UDP hole punching](https://en.wikipedia.org/wiki/UDP_hole_punching).
 
@@ -23,13 +23,13 @@ does for example).
 * Tracker
 
   https://github.com/breedhub/bhit-node
-  
+ 
   Or you can skip it entirely and just use default public Breedhub tracker
-  
+ 
 * Daemon
 
   https://github.com/breedhub/bhid-node
-  
+ 
   This is what you need
 
 # Usage
@@ -111,7 +111,7 @@ Authorize this host as the daemon of the token provided. With -l flag
 
 Prints the list of all your daemons or just daemons attached to
 &lt;path&gt;. Use -n for no-header version.
-            
+ 
 ## Managing connections
 
 ### create - Create new connection
